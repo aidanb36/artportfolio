@@ -196,7 +196,7 @@ nav a:hover::before {
 .portfolio {
     display: grid;
     height: 100%;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 20px;
 }
@@ -240,7 +240,10 @@ nav a:hover::before {
 .six{
     background-image: url(../image5.jpeg);
     background-size: cover;
-
+}
+.seven{
+    background-image: url(../mhb.jpeg);
+    background-size: cover;
 }
 .desc{
     visibility: hidden;
@@ -249,6 +252,18 @@ nav a:hover::before {
 .two:hover .desc,
 .three:hover .desc,
 .four:hover .desc {
+    visibility: visible;
+    color: white;
+}
+.five:hover .desc{
+        visibility: visible;
+    color: white;
+}
+.six:hover .desc{
+        visibility: visible;
+    color: white;
+}
+.seven:hover .desc{
     visibility: visible;
     color: white;
 }
@@ -283,6 +298,12 @@ nav a:hover::before {
     box-shadow: var(--shadow);
 }
 .six:hover {
+    background-color: rgba(104, 104, 104, 0.9);
+    background-blend-mode: multiply;
+    transition: ease-in-out 250ms;
+    box-shadow: var(--shadow);
+}
+.seven:hover {
     background-color: rgba(104, 104, 104, 0.9);
     background-blend-mode: multiply;
     transition: ease-in-out 250ms;
