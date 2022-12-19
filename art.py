@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, redirect, url_for
-from werkzeug.utils import secure_filename
 import pymysql
 app = Flask(__name__,static_folder="static", static_url_path="")
 
