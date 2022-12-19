@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@300&display=swap">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <script type="text/javascript" src = "{{ url_for('static', filename = 'js/main.js')}}"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Artify</title>
+    </head>
+
+    <body>
+ <!-- NAVIGATION STARTS HERE -->
+    <header>
+        <div class="containernav">
+            <a href="#intro"><img src="mhb-removebg-preview.png" alt="logo" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#gallery">Contact me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+ <!-- NAVIGATION ENDS HERE -->
+
+<!-- INTRODUCTION STARTS HERE -->
+    <section id="intro" class="intro">
+        <div class="container">
+            <h1 class="moto">Madeline's Portfolio </br>
+                <span>A Collection of Art Pieces</span>
+                <span>My Art. Your Design.</span>
+
+            </h1>
+            <a href="#pathway" class="button">Make it happen</a>
+        </div>
+    </section>
+<!-- INTRODUCTION ENDS HERE -->
+
+<!-- PATHWAY STARTS HERE -->
+    <section id="pathway">
+        <div class="container">
+            <div class="explanation">
+                <h1>How it works</h1>
+            </div>
+            <div class="row">
+                <div class="step">
+                    <h1> Have an idea</h1>
+                    <p>Interested in a specific request? Submit an idea and you will be contacted shortly.</p>
+                </div>
+                <div class="step">
+                    <h1> Customise it</h1>
+                    <p>Make your request unique. Provide details (stylistic choices, medium, size, etc.) so we can work together.</p>
+                </div>
+                <div class="step">
+                    <h1>Receive it</h1>
+                    <p>Obtain your newly created piece.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- PATHWAY ENDS HERE -->
+
+
+<!-- GALLERY STARTS HERE -->
+    <section id="gallery" class="ending">
+        <div class="gallery">
+            <div class="portfolio">
+                <div class="portfolio-item medium one"><p class="desc" >Water Color Paint.</p></div>
+                <div class="portfolio-item medium two"><p class="desc">Colored Pencil.</p></div>
+                <div class="portfolio-item tall three"><p class="desc">Acrylic.</p></div>
+                <div class="portfolio-item tall four"><p class="desc">Acrylic.</p></div>
+                <div class="portfolio-item tall five"><p class="desc">Acrylic.</p></div>
+                <div class="portfolio-item tall six"><p class="desc">Acrylic.</p></div>
+
+            </div>
+        </div>
+<!-- GALLERY ENDS HERE -->
+
+<!-- ABOUT ME STARTS HERE -->
+<!-- ABOUT ME ENDS HERE -->
+        <div class="contact">
+            <!-- ABOUT ME ENDS HERE -->
+            <div class="about">
+               <h1>About me</h1>
+               <p>I'm a recent graduate of Eastern Connecticut State University, majoring in anthropology. Nearly my entire life I've spent creating art. Though I specialize in painting, sculpture, and figure drawing, I'm advancing my skills in digital art and animation. One of my most popular mediums is hand-crafted cards which I can make for almost any request.</p>
+<!--               <br>-->
+<!--               <p>I h</p>-->
+            </div>
+            <br>
+            <h1>Request a quote</h1>
+            <p>Have a new idea for an art piece? Send me a request so we can work together!</p>
+            <br>
+
+            <!-- FORM STARTS HERE -->
+            <form action="mailto:aidanb363@gmail.com" method="POST" enctype="text/plain" class="form">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="technique">Technique</label>
+                        <select id="technique" name="technique">
+                            <option value="">Select</option>
+                            <option value="pencil">Pencils</option>
+                            <option value="pen">Ballpoint Pen</option>
+                            <option value="acrylic">Acrylic Paints</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="size">Size</label>
+                        <select id="size" name="size">
+                            <option value="">Select</option>
+                            <option value="a3">A3</option>
+                            <option value="a4">A4</option>
+                            <option value="a5">A5</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="image" class="not">Reference picture</label>
+                        <input class="not" type="file" id="file" name="image">
+                    </div>
+                </div>
+                <label for="notes">Additional Notes</label>
+                <textarea name="notes" id="notes" rows="6" placeholder="Please include any additional notes here"></textarea>
+                <button type="submit" onclick="myFunction()">Send</button>
+            </form>
+
+        </div>
+    </section>
+<!-- FORM ENDS HERE -->
+<!-- GALLERY ENDS HERE -->
+    <footer>
+            <br>
+            <h1>Thank you</h1>
+            <p>@MHB</p>
+            <p>Stay Artistic</p>
+    </footer>
+    </body>
+</html>
