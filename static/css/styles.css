@@ -215,6 +215,28 @@ nav a:hover::before {
     grid-row: span 3;
     grid-column: span 2;
 }
+.port {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+.port-item {
+    font-weight: 300;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.port-item.medium{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.port-item.tall{
+    grid-row: span 3;
+    grid-column: span 2;
+}
 .one {
     background-image: url(../image0.jpeg);
     background-size: cover;
