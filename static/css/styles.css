@@ -163,11 +163,7 @@ nav a:hover::before {
     justify-content: space-around;
     flex-direction: column;
 }
-@media (min-width: 40rem) {
-    .row {
-        flex-direction: row;
-    }
-}
+
 .step {
     width: 30%;
     padding: 1%;
