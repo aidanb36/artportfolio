@@ -193,7 +193,7 @@ nav a:hover::before {
 .portfolio {
     display: grid;
     height: 100%;
-    grid-template-rows: repeat(13, 1fr);
+    grid-template-rows: repeat(15, 1fr);
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 20px;
 }
@@ -210,28 +210,6 @@ nav a:hover::before {
 }
 .portfolio-item.tall{
     grid-row: span 4;
-    grid-column: span 2;
-}
-.port {
-    display: grid;
-    height: 100%;
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px;
-}
-.port-item {
-    font-weight: 300;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.port-item.medium{
-    grid-row: span 2;
-    grid-column: span 2;
-}
-.port-item.tall{
-    grid-row: span 3;
     grid-column: span 2;
 }
 .one {
@@ -261,7 +239,10 @@ nav a:hover::before {
     background-size: cover;
 }
 .seven{
-    background-image: url(../mhb.jpeg);
+    background-image: url(../image6.jpeg);
+    background-size: cover;
+}.eight{
+    background-image: url(../IMG_1194.jpg);
     background-size: cover;
 }
 .desc{
@@ -283,6 +264,9 @@ nav a:hover::before {
     color: white;
 }
 .seven:hover .desc{
+    visibility: visible;
+    color: white;
+}.eight:hover .desc{
     visibility: visible;
     color: white;
 }
@@ -323,6 +307,11 @@ nav a:hover::before {
     box-shadow: var(--shadow);
 }
 .seven:hover {
+    background-color: rgba(104, 104, 104, 0.9);
+    background-blend-mode: multiply;
+    transition: ease-in-out 250ms;
+    box-shadow: var(--shadow);
+}.eight:hover {
     background-color: rgba(104, 104, 104, 0.9);
     background-blend-mode: multiply;
     transition: ease-in-out 250ms;
