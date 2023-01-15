@@ -17,7 +17,7 @@ body {
     background: #fffde2;
     /*font-family: 'Piazzolla', sans-serif;*/
     /*font-style: italic;*/
-    font-family: "Copperplate Gothic Light", sans-serif;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
     font-weight: 300;
     display: flex;
     flex-direction: column;
@@ -393,16 +393,6 @@ footer p{
     text-transform: uppercase;
 }
 @media (min-width: 40rem) {
-    body{
-        margin: 0;
-        padding: 0;
-        background: #fffde2;
-        font-family: "Copperplate Gothic Light", sans-serif;
-        font-weight: 300;
-        display: flex;
-        flex-direction: column;
-        min-height: 100%;
-    }
     .row {
         flex-direction: row;
     }
