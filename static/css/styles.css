@@ -196,7 +196,7 @@ nav a:hover::before {
     display: grid;
     height: 100%;
     grid-template-rows: repeat(15, 1fr);
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 20px;
     object-fit: cover;
 }
@@ -263,6 +263,10 @@ nav a:hover::before {
     background-image: url(../cat2.jpeg);
     background-size: cover;
     background-position: center;
+}.eleven{
+    background-image: url(../anime.jpeg);
+    background-size: cover;
+    background-position: center;
 }
 
 .desc{
@@ -293,6 +297,9 @@ nav a:hover::before {
     visibility: visible;
     color: white;
 }.ten:hover .desc{
+    visibility: visible;
+    color: white;
+}.eleven:hover .desc{
     visibility: visible;
     color: white;
 }
@@ -348,6 +355,11 @@ nav a:hover::before {
     transition: ease-in-out 250ms;
     box-shadow: var(--shadow);
 }.ten:hover {
+    background-color: rgba(104, 104, 104, 0.9);
+    background-blend-mode: multiply;
+    transition: ease-in-out 250ms;
+    box-shadow: var(--shadow);
+}.eleven:hover {
     background-color: rgba(104, 104, 104, 0.9);
     background-blend-mode: multiply;
     transition: ease-in-out 250ms;
@@ -428,7 +440,9 @@ footer h1{
 footer p{
     text-transform: uppercase;
 }
-
+.about-section {
+    padding-left: 50px; /* Adjust this value to increase or decrease the space */
+}
 @media (min-width: 40rem) {
     .row {
         flex-direction: row;
