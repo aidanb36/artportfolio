@@ -443,8 +443,72 @@ footer p{
 .about-section {
     padding-left: 50px; /* Adjust this value to increase or decrease the space */
 }
-@media (min-width: 40rem) {
-    .row {
-        flex-direction: row;
-    }
+/* Small devices (portrait phones, 576px and up) */
+@media (max-width: 575.98px) {
+  .container {
+    width: 90%;
+  }
+
+  .containernav {
+    width: 100%;
+  }
+
+  .logo {
+    max-width: 30%;
+  }
+
+  .intro {
+    padding: 4em 0;
+    height: auto;
+  }
+
+  #pathway .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  #pathway {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .ending {
+    grid-template-columns: 1fr;
+    padding-left: 2vh;
+    padding-right: 2vh;
+  }
+
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+
+  .input-row .input-group {
+    flex-basis: 100%;
+    margin-bottom: 1em;
+  }
+
+  .about-section {
+    padding-left: 0;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #pathway .row {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .step {
+    width: 30%;
+  }
 }
