@@ -457,7 +457,9 @@ footer p{
         z-index: 1000;
         background-color: rgb(221, 216, 216);
     }
-
+    .contact{
+        margin-top: 35px;
+    }
   .logo {
     max-width: 30%;
   }
