@@ -449,18 +449,23 @@ footer p{
     width: 90%;
   }
 
-  .containernav {
-    width: 100%;
-  }
+    .containernav {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: rgb(221, 216, 216);
+    }
 
   .logo {
     max-width: 30%;
   }
 
   .intro {
-    padding: 4em 0;
-    height: auto;
-  }
+  padding: 15em 0; /* Increase top padding to avoid content overlap */
+  height: auto;
+}
 
   #pathway .row {
     flex-direction: column;
@@ -499,6 +504,17 @@ footer p{
   .about-section {
     padding-left: 0;
   }
+  nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+}
 }
 
 /* Large devices (desktops, 992px and up) */
