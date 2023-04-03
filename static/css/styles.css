@@ -468,6 +468,9 @@ footer p{
   padding: 15em 0; /* Increase top padding to avoid content overlap */
   height: auto;
 }
+  .logo{
+      max-width: 15%;
+  }
 
   #pathway .row {
     flex-direction: column;
@@ -517,6 +520,7 @@ footer p{
 nav ul li {
   list-style-type: none;
 }
+
 }
 
 /* Large devices (desktops, 992px and up) */
